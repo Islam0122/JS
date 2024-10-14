@@ -1,0 +1,75 @@
+
+.movie-carousel {
+    margin-top: 40px;
+}
+
+.movie-carousel .container {
+
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.movie-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    width: 225px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-card .rating {
+    background: rgba(239, 66, 52, 1);
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+
+.carousel-prev, .carousel-next {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}

@@ -1,0 +1,64 @@
+.info-section {
+    background: rgba(26, 26, 26, 1);
+    margin-top: 150px;
+    color: white;
+}
+.info-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+.info-section .container .info-column {
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    h3 {
+        font-size: 16px;
+        line-height: 19.5px;
+        margin-top: 48px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    div a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        display: block;
+        margin-bottom: 20px;
+
+    }
+    div a:hover {
+        text-decoration: underline;
+    }
+    .info-icons {
+        display: flex;
+        justify-content: left;
+        gap:20px;
+    }
+    button {
+        background: rgba(239, 66, 52, 1);
+        color: white;
+        border: none;
+        padding: 5px 20px;
+        font-size: 12px;
+        border-radius: 36px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 1);
+    p{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.63px;
+    }
+}

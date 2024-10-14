@@ -1,0 +1,64 @@
+.Interstellar {
+    width: 880px;
+    height: 560px;
+    background: rgba(26, 26, 26, 1);
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Interstellar .container {
+    display: flex;
+    gap: 90px;
+}
+.Interstellar .Interstellar-image img {
+    margin-top: 55px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.Interstellar-text {
+  margin-top: 150px;
+}
+.Interstellar-text h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.Interstellar-text h1 span {
+    font-size: 24px;
+    font-weight: normal;
+    color: #ccc;
+    margin-left: 30px;
+}
+.Interstellar-text .genres {
+    font-size: 16px;
+    color: rgba(239, 66, 52, 1);
+    margin-top: 15px;
+}
+
+.Interstellar-text .description {
+    color: rgba(255, 255, 255, 1);
+    width: 442px;
+    height: 87px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.54px;
+}
+.Interstellar-text button {
+    background: rgba(239, 66, 52, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 36px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.Interstellar-text button:hover {
+    background-color: white;
+    color: black;
+}
