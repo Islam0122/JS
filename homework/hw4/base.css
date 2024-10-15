@@ -1,0 +1,51 @@
+*{
+    font-family : Roboto, -apple-system, sans-serif;
+}
+.container {
+    width: 1125px;
+    margin: 0 auto;
+}
+.menu h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1A1A1A;
+    text-align: left;
+    box-sizing: border-box;
+    height:28px;
+    margin-bottom : 16px;
+    padding-left : 8px;
+    padding-right : 8px;
+}
+
+.category-btns {
+    display: flex;
+    justify-content: left;
+    .category-btn {
+        display: flex; /* Добавлено для центрирования текста */
+        justify-content: center; /* Центрируем текст по горизонтали */
+        align-items: center; /* Центрируем текст по вертикали */
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height:12px;
+        text-align:center;
+        height: 33px;
+        width: 100px;
+        margin-right: 8px;
+        border-radius: 6px;
+        background-size: cover;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+.category-btn.active {
+    /* Увеличиваем размер кнопки на 10% при активации */
+    transform: scale(1.1);
+}
+
+.category-btn:hover {
+    /* Увеличиваем размер кнопки на 5% при наведении */
+    transform: scale(1.05);
+}
+
