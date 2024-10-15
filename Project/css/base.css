@@ -1,0 +1,112 @@
+/* Общие стили */
+* {
+    font-family: 'Poppins', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Центрируем контейнер */
+.container {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+/* Стили для header */
+.menu-header header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;  /* немного пространства сверху и снизу */
+}
+
+/* Логотип */
+.menu-header header .logo {
+    display: flex;
+    align-items: center;
+}
+.menu-header header .logo div {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #FF8A00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+}
+.menu-header header .logo div h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.menu-header header .logo span {
+    font-size: 14px;
+    font-weight: 600;
+    .black {
+        color: black; /* Черная часть — "Capi" */
+    }
+    .orange {
+        color: #FF8A00; /* Желтая часть — "to" */
+    }
+}
+
+
+.menu-header header .div{
+    margin-left: 114px;
+    a{
+        gap:145px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #311F09;
+        text-decoration: none;
+        transition: background-color ease 0.4s;
+        margin-right: 45px;
+    }
+    a:hover,a:active{
+        color: #FF8A00;
+    }
+}
+
+
+
+.menu-header header .actions {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header header .cart {
+    margin-left: 420px;
+    position: relative;
+}
+
+.menu-header header .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Кнопка входа */
+.menu-header header .login-btn {
+    margin-left: 25px;
+    width: 112px;
+    height: 50px;
+    border-radius: 133px;
+    background: #3FA72F;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    cursor: pointer;
+    color:#FFFFFF;
+    border: none;
+    padding: 15px 36px;
+    transition: background-color 0.3s ease;
+}
+.menu-header header .login-btn:hover {
+    background: #FF8A00;
+}

@@ -1,0 +1,30 @@
+.menu {
+    h2{
+        text-align: center;
+        font-size: 80px;
+    }
+}
+
+.category-btns{
+    padding: 60px 0;
+    display: flex;
+    gap: 27px;
+
+    button{
+        border: none;
+        border-radius: 33px;
+        padding: 14px 54px;
+        background: #D0CCC7;
+        font-size: 20px;
+        font-weight: 400;
+        transition: background-color ease 0.4s;
+    }
+    button:hover{
+        background-color: #311F09;
+        color: white;
+    }
+    button:active{
+        background-color: #311F09;
+        color: white;
+    }
+}
