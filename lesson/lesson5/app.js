@@ -20,11 +20,10 @@ buttons.forEach(btn => {
 });
 
 historyButton.addEventListener('click', () => {
-    // Toggle history section visibility
     if (historyDiv.style.display === 'none') {
-        historyDiv.style.display = 'block'; // Show the history
+        historyDiv.style.display = 'block';
     } else {
-        historyDiv.style.display = 'none'; // Hide the history
+        historyDiv.style.display = 'none';
     }
 });
 
@@ -49,7 +48,7 @@ function calculate(option) {
 }
 
 function updateHistory() {
-    const latest = history[history.length - 1]; // Берём последнюю операцию из массива history
+    const latest = history[history.length - 1]; // Берём последнюю операцию из массива
 
     historyList.innerHTML += `
         <li>
