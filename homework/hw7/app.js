@@ -40,8 +40,6 @@ taskForm.addEventListener('submit', (event) => {
         };
 
         newTask.appendChild(finishButton);
-        document.getElementById('task-list').appendChild(newTask); // Добавляем задачу в список
-        taskInput.value = '';
-        taskDateInput.value = '';
+        document.getElementById('task-list').appendChild(newTask); // Добавляем задачу в списо
     }
 });
