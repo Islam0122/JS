@@ -139,7 +139,9 @@ header .header-top {
     background: var(--card-bg-color);
     margin-bottom: 24px;
     color: white;
-
+    display: flex;
+    flex-direction: column;
+    /* direction*/
     align-items: center;
     .card-img {
         text-align: center;
