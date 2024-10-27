@@ -3,7 +3,7 @@ const menuNames = ['Hot Dishes',
     'Soup', 'Grill',
     'Appetizer',
     'Dessert']
-const foods = [
+let foods = [
     {
         "img": "./image/img.png",
         "name": "Spicy seasoned seafood noodles",
@@ -64,7 +64,13 @@ const foods = [
 // DOM
 const header_nav = document.querySelector('.header-nav')
 const menu_cards = document.querySelector('.menu-cards');
+const Search = document.getElementById('search');
 
+Search.addEventListener('keyup', () => {
+    const name = Search.value.trim()
+    const array = foods.filter(food => food.name.includes(name));
+    renderMenuCard(array)
+})
 function renderMenuButtons (index=0){
     header_nav.innerHTML = menuNames.map( (el,i) => {
         let clas=index===i ?'active':""
@@ -77,7 +83,7 @@ function renderMenuButtons (index=0){
         })
     })
 }
-function renderMenuCard() {
+function renderMenuCard(foodss=foods) {
     menu_cards.innerHTML = foods.map((food, i) => {
         return `
             <div class="card">
